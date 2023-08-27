@@ -12,16 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAppTraining"
         tools:targetApi="31">
+
         <activity
-            android:name=".BasicActivity"
+            android:name=".intents.HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AndroidAppTraining">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".intents.DashBoardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>
